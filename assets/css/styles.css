@@ -1,0 +1,35 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a, button, inpur, textarea, select{
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: none;
+}
+
+img, svg{
+    display: block;
+    max-width: 100%;
+}
+
+button{
+    cursor: pointer;
+}
