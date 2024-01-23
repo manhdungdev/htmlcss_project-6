@@ -26,8 +26,7 @@
 .col,
 .row>[class^="col-"],
 .row[class*="row-cols-"]>.col {
-    padding-left: calc(var(--spacer) / 2);
-    padding-right: calc(var(--spacer) / 2);
+    padding: calc(var(--spacer) / 2);
 }
 
 .row>[class^="col-"],
