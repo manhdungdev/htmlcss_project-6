@@ -1,7 +1,7 @@
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 .container,
-.container-fluid  {
+.container-fluid {
     --column-size: 12;
     --spacer: 10px;
 
@@ -25,13 +25,13 @@
 
 .col,
 .row>[class^="col-"],
-.row[class*="row-cols-"]>.col{
+.row[class*="row-cols-"]>.col {
     padding-left: calc(var(--spacer) / 2);
     padding-right: calc(var(--spacer) / 2);
 }
 
 .row>[class^="col-"],
-.row[class*="row-cols-"]>.col{
+.row[class*="row-cols-"]>.col {
     flex: 0 0 auto;
 }
 
@@ -123,55 +123,55 @@
 }
 
 /* Offset */
-.row > [class*="offset-"]{
+.row>[class*="offset-"] {
     margin-left: calc(100% / var(--column-size) * var(--offset-number));
 }
 
-.offset-0{
+.offset-0 {
     --offset-number: 0;
 }
 
-.offset-1{
+.offset-1 {
     --offset-number: 1;
 }
 
-.offset-2{
+.offset-2 {
     --offset-number: 2;
 }
 
-.offset-3{
+.offset-3 {
     --offset-number: 3;
 }
 
-.offset-4{
+.offset-4 {
     --offset-number: 4;
 }
 
-.offset-5{
+.offset-5 {
     --offset-number: 5;
 }
 
-.offset-6{
+.offset-6 {
     --offset-number: 6;
 }
 
-.offset-7{
+.offset-7 {
     --offset-number: 7;
 }
 
-.offset-8{
+.offset-8 {
     --offset-number: 8;
 }
 
-.offset-9{
+.offset-9 {
     --offset-number: 9;
 }
 
-.offset-10{
+.offset-10 {
     --offset-number: 10;
 }
 
-.offset-11{
+.offset-11 {
     --offset-number: 11;
 }
 
@@ -180,6 +180,9 @@
     .container {
         max-width: 540px;
         --spacer: 18px;
+
+        padding-left: 0;
+        padding-right: 0;
     }
 
     /* Gutter */
@@ -262,51 +265,51 @@
     }
 
     /* Offset */
-    .offset-sm-0{
+    .offset-sm-0 {
         --offset-number: 0;
     }
-    
-    .offset-sm-1{
+
+    .offset-sm-1 {
         --offset-number: 1;
     }
-    
-    .offset-sm-2{
+
+    .offset-sm-2 {
         --offset-number: 2;
     }
-    
-    .offset-sm-3{
+
+    .offset-sm-3 {
         --offset-number: 3;
     }
-    
-    .offset-sm-4{
+
+    .offset-sm-4 {
         --offset-number: 4;
     }
-    
-    .offset-sm-5{
+
+    .offset-sm-5 {
         --offset-number: 5;
     }
-    
-    .offset-sm-6{
+
+    .offset-sm-6 {
         --offset-number: 6;
     }
-    
-    .offset-sm-7{
+
+    .offset-sm-7 {
         --offset-number: 7;
     }
-    
-    .offset-sm-8{
+
+    .offset-sm-8 {
         --offset-number: 8;
     }
-    
-    .offset-sm-9{
+
+    .offset-sm-9 {
         --offset-number: 9;
     }
-    
-    .offset-sm-10{
+
+    .offset-sm-10 {
         --offset-number: 10;
     }
-    
-    .offset-sm-11{
+
+    .offset-sm-11 {
         --offset-number: 11;
     }
 }
@@ -316,13 +319,16 @@
     .container {
         max-width: 720px;
         --spacer: 24px;
+
+        padding-left: 0;
+        padding-right: 0;
     }
 
     /* Gutter */
     .g-md-0 {
         --spacer: 0;
     }
-    
+
     /* Row-cols- */
     .row-cols-md-1 {
         --row-cols-number: 1;
@@ -397,51 +403,51 @@
     }
 
     /* Offset */
-    .offset-md-0{
+    .offset-md-0 {
         --offset-number: 0;
     }
-    
-    .offset-md-1{
+
+    .offset-md-1 {
         --offset-number: 1;
     }
-    
-    .offset-md-2{
+
+    .offset-md-2 {
         --offset-number: 2;
     }
-    
-    .offset-md-3{
+
+    .offset-md-3 {
         --offset-number: 3;
     }
-    
-    .offset-md-4{
+
+    .offset-md-4 {
         --offset-number: 4;
     }
-    
-    .offset-md-5{
+
+    .offset-md-5 {
         --offset-number: 5;
     }
-    
-    .offset-md-6{
+
+    .offset-md-6 {
         --offset-number: 6;
     }
-    
-    .offset-md-7{
+
+    .offset-md-7 {
         --offset-number: 7;
     }
-    
-    .offset-md-8{
+
+    .offset-md-8 {
         --offset-number: 8;
     }
-    
-    .offset-md-9{
+
+    .offset-md-9 {
         --offset-number: 9;
     }
-    
-    .offset-md-10{
+
+    .offset-md-10 {
         --offset-number: 10;
     }
-    
-    .offset-md-11{
+
+    .offset-md-11 {
         --offset-number: 11;
     }
 }
@@ -450,14 +456,14 @@
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
-        --spacer: 0px;
+        --spacer: 30px;
     }
 
     /* Gutter */
     .g-lg-0 {
         --spacer: 0;
     }
-    
+
     /* Row-cols- */
     .row-cols-lg-1 {
         --row-cols-number: 1;
@@ -533,51 +539,51 @@
     }
 
     /* Offset */
-    .offset-lg-0{
+    .offset-lg-0 {
         --offset-number: 0;
     }
-    
-    .offset-lg-1{
+
+    .offset-lg-1 {
         --offset-number: 1;
     }
-    
-    .offset-lg-2{
+
+    .offset-lg-2 {
         --offset-number: 2;
     }
-    
-    .offset-lg-3{
+
+    .offset-lg-3 {
         --offset-number: 3;
     }
-    
-    .offset-lg-4{
+
+    .offset-lg-4 {
         --offset-number: 4;
     }
-    
-    .offset-lg-5{
+
+    .offset-lg-5 {
         --offset-number: 5;
     }
-    
-    .offset-lg-6{
+
+    .offset-lg-6 {
         --offset-number: 6;
     }
-    
-    .offset-lg-7{
+
+    .offset-lg-7 {
         --offset-number: 7;
     }
-    
-    .offset-lg-8{
+
+    .offset-lg-8 {
         --offset-number: 8;
     }
-    
-    .offset-lg-9{
+
+    .offset-lg-9 {
         --offset-number: 9;
     }
-    
-    .offset-lg-10{
+
+    .offset-lg-10 {
         --offset-number: 10;
     }
-    
-    .offset-lg-11{
+
+    .offset-lg-11 {
         --offset-number: 11;
     }
 }
@@ -586,13 +592,16 @@
 @media (min-width: 1200px) {
     .container {
         max-width: 1170px;
+
+        padding-left: 0;
+        padding-right: 0;
     }
 
     /* Gutter */
     .g-xl-0 {
         --spacer: 0;
     }
-    
+
     /* Row-cols- */
     .row-cols-xl-1 {
         --row-cols-number: 1;
@@ -668,52 +677,51 @@
     }
 
     /* Offset */
-    .offset-xl-0{
+    .offset-xl-0 {
         --offset-number: 0;
     }
-    
-    .offset-xl-1{
+
+    .offset-xl-1 {
         --offset-number: 1;
     }
-    
-    .offset-xl-2{
+
+    .offset-xl-2 {
         --offset-number: 2;
     }
-    
-    .offset-xl-3{
+
+    .offset-xl-3 {
         --offset-number: 3;
     }
-    
-    .offset-xl-4{
+
+    .offset-xl-4 {
         --offset-number: 4;
     }
-    
-    .offset-xl-5{
+
+    .offset-xl-5 {
         --offset-number: 5;
     }
-    
-    .offset-xl-6{
+
+    .offset-xl-6 {
         --offset-number: 6;
     }
-    
-    .offset-xl-7{
+
+    .offset-xl-7 {
         --offset-number: 7;
     }
-    
-    .offset-xl-8{
+
+    .offset-xl-8 {
         --offset-number: 8;
     }
-    
-    .offset-xl-9{
+
+    .offset-xl-9 {
         --offset-number: 9;
     }
-    
-    .offset-xl-10{
+
+    .offset-xl-10 {
         --offset-number: 10;
     }
-    
-    .offset-xl-11{
+
+    .offset-xl-11 {
         --offset-number: 11;
     }
 }
-

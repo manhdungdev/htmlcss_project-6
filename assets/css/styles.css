@@ -19,10 +19,10 @@ body {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
-a,
 button,
 inpur,
 textarea,
@@ -51,6 +51,22 @@ button {
     margin-right: auto;
 }
 
+.heading {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.17857;
+    letter-spacing: -2.24px;
+}
+
+.subheading {
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+}
+
 .desc {
     margin-top: 20px;
     color: #51586A;
@@ -69,6 +85,17 @@ button {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.66667;
+}
+
+.clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: var(--line-clamp, 2);
+}
+
+.clamp-3{
+    --line-clamp: 3;
 }
 
 /* Header */
@@ -158,6 +185,7 @@ button {
 }
 
 .hero__content {
+    position: relative;
     width: 43%;
     margin-left: auto;
     margin-top: 137px;
@@ -224,19 +252,26 @@ button {
     border-color: #ccc;
 }
 
+.hero__decor-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    translate: 50% 0;
+}
+
 /* Clients */
 
 .clients {
-    margin-top: 110px;
+    padding: 110px 0 140px;
 }
 
-.clients__body {
+.clients__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.clients__heading {
+.clients__title {
     position: relative;
     width: 253px;
     margin-left: 100px;
@@ -247,7 +282,7 @@ button {
     letter-spacing: -1.68px;
 }
 
-.clients__heading::before {
+.clients__title::before {
     content: "";
     position: absolute;
     top: 22px;
@@ -272,10 +307,40 @@ button {
 }
 
 .clients__item:nth-child(4n + 1),
-.clients__item:nth-child(4n + 2){
+.clients__item:nth-child(4n + 2) {
     margin-right: 60px;
 }
 
-.clients__item:nth-child(4n + 3){
+.clients__item:nth-child(4n + 3) {
     margin-right: 36px;
+}
+
+.clients__infor {
+    width: 534px;
+    margin: 134px auto 60px;
+    text-align: center;
+}
+
+.clients-card{
+    padding: 33px 43px;
+    background: #FBFAFF;
+    transition: ease 0.25s;
+}
+
+.clients-card:hover{
+   translate: 0 -16px;
+}
+
+.clients-card__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #0804150d;
+}
+
+.clients-card__heading{
+    margin-top: 22px;
 }
