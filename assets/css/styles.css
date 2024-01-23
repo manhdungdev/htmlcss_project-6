@@ -223,3 +223,59 @@ button {
     background: #ccc;
     border-color: #ccc;
 }
+
+/* Clients */
+
+.clients {
+    margin-top: 110px;
+}
+
+.clients__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients__heading {
+    position: relative;
+    width: 253px;
+    margin-left: 100px;
+    color: #080415;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: -1.68px;
+}
+
+.clients__heading::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: -13px;
+    translate: -100% 0;
+    display: inline-block;
+    width: 86px;
+    height: 2px;
+    background: #5D3BEE;
+}
+
+.clients__list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    row-gap: 34px;
+}
+
+.clients__item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.clients__item:nth-child(4n + 1),
+.clients__item:nth-child(4n + 2){
+    margin-right: 60px;
+}
+
+.clients__item:nth-child(4n + 3){
+    margin-right: 36px;
+}
