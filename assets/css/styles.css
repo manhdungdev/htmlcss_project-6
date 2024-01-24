@@ -493,7 +493,7 @@ button {
     margin-top: 0;
 }
 
-.stats-thumb{
+.stats-thumb {
     width: 100%;
     height: 628px;
     margin: 70px 0 130px;
@@ -508,6 +508,16 @@ button {
 .stats-body__desc {
     width: 570px;
     margin: 20px auto 60px auto;
+}
+
+.stats-body__list {
+    display: flex;
+    overflow: hidden;
+}
+
+.stats-item {
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .stats-item__quote {
@@ -574,17 +584,17 @@ button {
     background: rgb(8 4 21 / 20%);
 }
 
-.stats-body__btn--active{
+.stats-body__btn--active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #5D3BEE;
     background: #fff;
 }
 
-.stats-body__btn--active::before{
+.stats-body__btn--active::before {
     content: "";
     width: 12px;
     height: 12px;
@@ -592,14 +602,103 @@ button {
     background: #5D3BEE;
 }
 
-.stats-decor__right{
+.stats-decor__right {
     position: absolute;
     right: 0;
     bottom: 0;
 }
 
-.stats-decor__left{
+.stats-decor__left {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+/* Questioni */
+
+.quest {
+    padding: 116px 0 80px;
+}
+
+.quest__body {
+    width: 80%;
+}
+
+.quest__heading {
+    width: 575px;
+}
+
+.quest__list {
+    margin-top: 80px;
+}
+
+
+.quest-item + .quest-item{
+    padding-top: 40px;
+}
+
+.quest-item__body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quest-item__heading {
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+}
+
+.quest-item__body{
+    padding-bottom: 16px;
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: #08182F;
+    transition: ease 0.25s;
+}
+
+.quest-item__content{
+    width: 70%;
+}
+
+.quest-item__desc{
+    display: none;
+    margin-top: 8px;
+}
+
+.quest-item__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(93 59 238 / 20%);
+    cursor: pointer;
+    user-select: none;
+}
+
+.quest-item__close {
+    display: none;
+}
+
+.display:checked ~ .quest-item__body .quest-item__desc{
+    display: block;
+}
+
+.display:checked ~ .quest-item__body .quest-item__close{
+    display: block;
+}
+
+.display:checked ~ .quest-item__body .quest-item__open{
+    display: none;
+}
+
+.display:checked ~ .quest-item__body{
+    border-color: #5D3BEE;
+}
+
+.display:checked ~ .quest-item__body .quest-item__heading{
+    color: #5D3BEE;
 }
