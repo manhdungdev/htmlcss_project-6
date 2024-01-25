@@ -254,7 +254,7 @@ button {
 .hero__decor-1 {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 17px;
     translate: 50% 0;
 }
 
@@ -617,11 +617,12 @@ button {
 /* Questioni */
 
 .quest {
-    padding: 116px 0 80px;
+    padding: 116px 0 80px ;
 }
 
 .quest__body {
     width: 80%;
+    margin-left: 100px;
 }
 
 .quest__heading {
@@ -633,11 +634,11 @@ button {
 }
 
 
-.quest-item + .quest-item{
+.quest-item+.quest-item {
     padding-top: 40px;
 }
 
-.quest-item__body{
+.quest-item__body {
     display: flex;
     justify-content: space-between;
 }
@@ -648,9 +649,10 @@ button {
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: -1.28px;
+    cursor: pointer;
 }
 
-.quest-item__body{
+.quest-item__body {
     padding-bottom: 16px;
     border-bottom-width: 2px;
     border-style: solid;
@@ -658,11 +660,11 @@ button {
     transition: ease 0.25s;
 }
 
-.quest-item__content{
+.quest-item__content {
     width: 70%;
 }
 
-.quest-item__desc{
+.quest-item__desc {
     display: none;
     margin-top: 8px;
 }
@@ -683,22 +685,117 @@ button {
     display: none;
 }
 
-.display:checked ~ .quest-item__body .quest-item__desc{
+.display:checked~.quest-item__body .quest-item__desc {
     display: block;
 }
 
-.display:checked ~ .quest-item__body .quest-item__close{
+.display:checked~.quest-item__body .quest-item__close {
     display: block;
 }
 
-.display:checked ~ .quest-item__body .quest-item__open{
+.display:checked~.quest-item__body .quest-item__open {
     display: none;
 }
 
-.display:checked ~ .quest-item__body{
+.display:checked~.quest-item__body {
     border-color: #5D3BEE;
 }
 
-.display:checked ~ .quest-item__body .quest-item__heading{
+.display:checked~.quest-item__body .quest-item__heading {
     color: #5D3BEE;
+}
+
+/* Atmosphere */
+
+.atmosphere__body{
+    text-align: center;
+}
+
+.atmosphere__desc{
+    width: 483px;
+    margin: 12px auto 30px;
+}
+
+.atmosphere__link {
+    color: #5D3BEE;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+    text-decoration-line: underline;
+}
+
+.atmosphere__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 28px;
+    width: 1070px;
+    margin: 40px 0 0 100px;
+}
+
+.atmostphere__item{
+    height: 530px;
+    overflow: hidden;
+}
+
+.atmostphere__item:hover .atmosphere__img{
+    scale: 1.1;
+}
+
+.atmosphere__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale ease 0.25s;
+}
+
+/* Booking */
+
+.booking{
+    padding: 80px 0 50px;
+}
+
+.booking__body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 488px;
+    background: #FBFAFF;
+    text-align: center;
+}
+
+.booking__heading{
+    position: absolute;
+    z-index: 1;
+    margin-top: 12px;
+}
+
+.booking__desc{
+    width: 570px;
+    margin-top: 16px;
+}
+
+.booking__btn{
+    margin-top: 24px;
+}
+
+.booking__decor-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.booking__decor-center{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.booking__decor-right{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
