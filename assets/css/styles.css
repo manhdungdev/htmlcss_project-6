@@ -14,7 +14,6 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'DM Sans', sans-serif;
-    height: 20000px;
 
 }
 
@@ -84,6 +83,10 @@ button {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.66667;
+}
+
+.btn:hover{
+    opacity: 0.9;
 }
 
 .clamp {
@@ -328,6 +331,7 @@ button {
 
 .clients-card:hover {
     translate: 0 -16px;
+    box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.1), -10px 0 16px rgba(0, 0, 0, 0.1);
 }
 
 .clients-card__img {
@@ -617,7 +621,7 @@ button {
 /* Questioni */
 
 .quest {
-    padding: 116px 0 80px ;
+    padding: 116px 0 80px;
 }
 
 .quest__body {
@@ -707,11 +711,11 @@ button {
 
 /* Atmosphere */
 
-.atmosphere__body{
+.atmosphere__body {
     text-align: center;
 }
 
-.atmosphere__desc{
+.atmosphere__desc {
     width: 483px;
     margin: 12px auto 30px;
 }
@@ -725,7 +729,7 @@ button {
     text-decoration-line: underline;
 }
 
-.atmosphere__list{
+.atmosphere__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 28px;
@@ -733,16 +737,16 @@ button {
     margin: 40px 0 0 100px;
 }
 
-.atmostphere__item{
+.atmostphere__item {
     height: 530px;
     overflow: hidden;
 }
 
-.atmostphere__item:hover .atmosphere__img{
+.atmostphere__item:hover .atmosphere__img {
     scale: 1.1;
 }
 
-.atmosphere__img{
+.atmosphere__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -751,11 +755,11 @@ button {
 
 /* Booking */
 
-.booking{
+.booking {
     padding: 80px 0 50px;
 }
 
-.booking__body{
+.booking__body {
     position: relative;
     display: flex;
     justify-content: center;
@@ -764,38 +768,70 @@ button {
     height: 488px;
     background: #FBFAFF;
     text-align: center;
+    z-index: 1;
 }
 
-.booking__heading{
-    position: absolute;
-    z-index: 1;
+.booking__heading {
     margin-top: 12px;
 }
 
-.booking__desc{
+.booking__desc {
     width: 570px;
     margin-top: 16px;
 }
 
-.booking__btn{
+.booking__btn {
     margin-top: 24px;
 }
 
-.booking__decor-left{
+.booking__decor-left {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: -1;
 }
 
-.booking__decor-center{
+.booking__decor-center {
     position: absolute;
     inset: 0;
     margin: auto;
-    z-index: 2;
+    z-index: -1;
 }
 
-.booking__decor-right{
+.booking__decor-right {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
+}
+
+/* Footer */
+.footer {
+    width: 1429px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    padding: 18px 0 30px;
+    border-top: 2px solid rgb(12 7 32 / 20%);
+}
+
+.footer__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+}
+
+.footer__condition {
+    padding-left: 13px;
+    border-left: 1px solid rgb(82 87 113 / 60%);
+}
+
+.footer__policy,
+.footer__condition{
+    letter-spacing: -0.54px;
 }
