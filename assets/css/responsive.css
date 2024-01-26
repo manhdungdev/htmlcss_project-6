@@ -74,6 +74,10 @@
         user-select: none;
     }
 
+    .hero__decor {
+        width: 100%;
+    }
+
     .clients__header {
         flex-wrap: wrap;
         justify-content: center;
@@ -81,7 +85,6 @@
 
     .clients__title {
         margin-left: 0;
-
         color: #080415;
         text-align: center;
         font-weight: 500;
@@ -109,39 +112,40 @@
         width: 45%;
     }
 
-    .stats-header{
+    .stats-header {
         padding-top: 110px;
     }
 
-    .stats-header__list{
+    .stats-header__list {
         justify-content: space-around;
         width: 100%;
         column-gap: 50px;
         padding-left: 0;
     }
 
-    .stats-header__infor{
+    .stats-header__infor {
         font-size: 5rem;
     }
 
-    .atmosphere__list{
+    .atmosphere__list {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         margin-left: 0;
         margin-top: 50px;
     }
-    
-    .booking__decor-center{
+
+    .booking__decor-center {
         width: 100%;
     }
 
-    .booking__decor-left{
+    .booking__decor-left {
         display: none;
     }
 
-    .booking__decor-right{
+    .booking__decor-right {
         display: none;
     }
+
 
 }
 
@@ -160,10 +164,6 @@
 
     .hero {
         height: 700px;
-    }
-
-    .hero__decor{
-        width: 100%;
     }
 
     .hero__media {
@@ -210,11 +210,11 @@
         margin-top: 40px;
     }
 
-    .stats-thumb{
+    .stats-thumb {
         height: 450px;
     }
 
-    .atmostphere__item{
+    .atmostphere__item {
         height: 321px;
     }
 
@@ -233,5 +233,94 @@
 
     .drawer {
         inset: 0 25% 0 0;
+    }
+
+    .hero__body {
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero__media {
+        width: 100%;
+    }
+
+    .hero__content {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .hero__heading {
+        width: 260px;
+        color: #080415;
+        font-size: 4.2rem;
+        font-weight: 500;
+        line-height: 1.19;
+        letter-spacing: -1.68px;
+    }
+
+
+    .hero__media {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__img {
+        width: 65%;
+        height: 355px;
+    }
+
+    .hero__cta {
+        margin-top: 30px;
+    }
+
+    .hero__desc {
+        margin-top: 30px;
+    }
+
+    .hero__instruction {
+        margin-top: 30px;
+    }
+
+    .clients {
+        padding: 120px 0;
+    }
+
+    .clients__title {
+        width: 170px;
+        color: #080415;
+        text-align: center;
+        font-size: 2.8rem;
+    }
+
+    .clients__title::before {
+        top: -10px;
+    }
+
+    .clients__list {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 42px;
+        column-gap: 20px;
+    }
+
+    .clients__item:nth-child(4n + 1),
+    .clients__item:nth-child(4n + 2) {
+        margin-right: 0;
+    }
+
+    .clients__item:nth-child(4n + 3) {
+        margin-right: 0;
+    }
+
+    .clients__infor {
+        width: 100%;
+    }
+
+    .clients__heading {
+        color: #080415;
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 1.16667;
+        letter-spacing: -1.44px;
     }
 }
