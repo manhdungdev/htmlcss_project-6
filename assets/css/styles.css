@@ -163,6 +163,7 @@ button {
     position: relative;
     padding-top: 44px;
     background: #FBFAFF;
+    z-index: 1;
 }
 
 .hero__body {
@@ -178,6 +179,7 @@ button {
     position: absolute;
     bottom: 0;
     left: -40px;
+    z-index: -1;
 }
 
 .hero__img {
@@ -259,6 +261,7 @@ button {
     position: absolute;
     bottom: 0;
     right: 17px;
+    z-index: -1;
 }
 
 /* Clients */
@@ -381,6 +384,7 @@ button {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 24px 23px 23px 34px;
     background: #fff;
     z-index: 1;

@@ -1,14 +1,14 @@
 /* PC */
-@media screen and (min-width: 992px){
-    .show-on-mobile{
+@media screen and (min-width: 992px) {
+    .show-on-mobile {
         display: none;
     }
 
-    .show-on-motab{
+    .show-on-motab {
         display: none;
     }
 
-    .show-on-pc{
+    .show-on-pc {
         display: block;
     }
 
@@ -16,25 +16,25 @@
 
 /* Tablet and mobile */
 @media screen and (max-width: 991.98px) {
-    .show-on-motab{
+    .show-on-motab {
         display: block;
     }
 
-    .show-on-pc{
+    .show-on-pc {
         display: none;
     }
 
-    .nav{
+    .nav {
         display: none;
     }
 
-    .header__wrap{
+    .header__wrap {
         display: flex;
         align-items: center;
         column-gap: 16px;
     }
 
-    .overlay{
+    .overlay {
         position: fixed;
         inset: 0;
         background: rgba(0, 0, 0, 0.2);
@@ -44,7 +44,7 @@
         transition: ease 0.25s;
     }
 
-    .drawer{
+    .drawer {
         position: fixed;
         inset: 0 40% 0 0;
         width: 70%;
@@ -56,50 +56,182 @@
 
     }
 
-    .menu__checkbox:checked ~ .overlay{
+    .menu__checkbox:checked~.overlay {
         opacity: 1;
         visibility: visible;
     }
 
-    .menu__checkbox:checked ~ .drawer{
+    .menu__checkbox:checked~.drawer {
         translate: 0 0;
     }
 
-    .drawer__link{
+    .drawer__link {
         display: block;
-        padding: 20px 0;
+        padding: 30px 0;
         color: #333;
         font-weight: 600;
+        font-size: 2.2rem;
         user-select: none;
     }
+
+    .clients__header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .clients__title {
+        margin-left: 0;
+
+        color: #080415;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1.214;
+        letter-spacing: -1.12px;
+    }
+
+    .clients__title::before {
+        left: 50%;
+        translate: -50% 0;
+    }
+
+    .project__header {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .project__desc {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .project-item__content {
+        width: 45%;
+    }
+
+    .stats-header{
+        padding-top: 110px;
+    }
+
+    .stats-header__list{
+        justify-content: space-around;
+        width: 100%;
+        column-gap: 50px;
+        padding-left: 0;
+    }
+
+    .stats-header__infor{
+        font-size: 5rem;
+    }
+
+    .atmosphere__list{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    
+    .booking__decor-center{
+        width: 100%;
+    }
+
+    .booking__decor-left{
+        display: none;
+    }
+
+    .booking__decor-right{
+        display: none;
+    }
+
 }
 
+
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 991.98px){
-    .show-on-mobile{
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .show-on-mobile {
         display: none;
     }
 
     .header__logo,
-    .header__menu{
+    .header__menu {
         width: 46px;
         height: 46px;
     }
+
+    .hero {
+        height: 700px;
+    }
+
+    .hero__decor{
+        width: 100%;
+    }
+
+    .hero__media {
+        display: none;
+    }
+
+    .hero__content {
+        width: 100%;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .hero__heading {
+        font-size: 6.5rem;
+    }
+
+    .hero__desc {
+        margin: 65px auto 0;
+        width: 55%;
+    }
+
+    .hero__cta {
+        margin-top: 80px;
+    }
+
+    .hero__instruction {
+        justify-content: center;
+    }
+
+    .hero__follow {
+        font-size: 2rem;
+    }
+
+    .clients__title {
+        width: 210px;
+        font-size: 3.8rem;
+    }
+
+    .clients__title::before {
+        top: -14px;
+    }
+
+    .clients__list {
+        margin-top: 40px;
+    }
+
+    .stats-thumb{
+        height: 450px;
+    }
+
+    .atmostphere__item{
+        height: 321px;
+    }
+
 }
 
 /* Mobile */
-@media screen and (max-width: 767.98px){
-    .show-on-mobile{
+@media screen and (max-width: 767.98px) {
+    .show-on-mobile {
         display: block;
     }
 
-    .header__icon{
+    .header__icon {
         width: 65px;
         height: 65px;
     }
 
-    .drawer{
+    .drawer {
         inset: 0 25% 0 0;
     }
 }
-
