@@ -1,0 +1,105 @@
+/* PC */
+@media screen and (min-width: 992px){
+    .show-on-mobile{
+        display: none;
+    }
+
+    .show-on-motab{
+        display: none;
+    }
+
+    .show-on-pc{
+        display: block;
+    }
+
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 991.98px) {
+    .show-on-motab{
+        display: block;
+    }
+
+    .show-on-pc{
+        display: none;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .header__wrap{
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    .overlay{
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease 0.25s;
+    }
+
+    .drawer{
+        position: fixed;
+        inset: 0 40% 0 0;
+        width: 70%;
+        padding: 40px;
+        background: #fff;
+        z-index: 11;
+        translate: -100% 0;
+        transition: translate ease 0.25s;
+
+    }
+
+    .menu__checkbox:checked ~ .overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu__checkbox:checked ~ .drawer{
+        translate: 0 0;
+    }
+
+    .drawer__link{
+        display: block;
+        padding: 20px 0;
+        color: #333;
+        font-weight: 600;
+        user-select: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+    .show-on-mobile{
+        display: none;
+    }
+
+    .header__logo,
+    .header__menu{
+        width: 46px;
+        height: 46px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px){
+    .show-on-mobile{
+        display: block;
+    }
+
+    .header__icon{
+        width: 65px;
+        height: 65px;
+    }
+
+    .drawer{
+        inset: 0 25% 0 0;
+    }
+}
+
