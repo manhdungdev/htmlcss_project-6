@@ -146,6 +146,12 @@
         display: none;
     }
 
+    .stats-body__btns-motab{
+        display: flex;
+    }
+
+
+
 
 }
 
@@ -226,12 +232,17 @@
         display: block;
     }
 
+    .hide-on-mobile {
+        display: none;
+    }
+
     .header__icon {
         width: 65px;
         height: 65px;
     }
 
     .drawer {
+        padding: 20px;
         inset: 0 25% 0 0;
     }
 
@@ -322,5 +333,155 @@
         font-weight: 500;
         line-height: 1.16667;
         letter-spacing: -1.44px;
+    }
+
+    .btn {
+        min-width: 147px;
+        height: 53px;
+    }
+
+    .stats-body__btns-mobile {
+        display: flex;
+    }
+
+    .project__heading {
+        width: 301px;
+        text-align: center;
+        font-size: 3.6rem;
+    }
+
+    .project__desc {
+        width: 350px;
+        line-height: 1.625;
+    }
+
+    .project-item__content {
+        width: 176px;
+    }
+
+    .project-item__subheading {
+        color: #080415;
+        font-size: 2.4rem;
+        line-height: 1.41667;
+        letter-spacing: -0.96px;
+    }
+
+    .project-item__desc {
+        color: #51586A;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.42857;
+    }
+
+    .project-item__study {
+        color: #080415;
+        font-weight: 700;
+        line-height: 1.75;
+        text-decoration-line: underline;
+    }
+
+    .project-item__img {
+        width: 122px;
+        height: 93px;
+    }
+
+    .stats-header__title-content {
+        color: #5D3BEE;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2;
+        letter-spacing: -0.8px;
+    }
+
+    .heading {
+        color: #080415;
+        font-size: 3.6rem;
+        letter-spacing: -1.44px;
+    }
+
+    .desc,
+    .stats-item__quote {
+        width: 100%;
+    }
+
+    .stats-header__desc {
+        width: 100%;
+    }
+
+    .stats-header__infor {
+        color: #080415;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: 0.9px;
+        text-decoration-line: underline;
+    }
+
+    .stats-header__text {
+        color: #51586A;
+        font-weight: 400;
+        line-height: 1.375;
+    }
+
+    .stats-thumb {
+        height: 276px;
+    }
+
+    .stats-item__quote {
+        text-align: center;
+    }
+
+    .quest__heading {
+        width: 316px;
+    }
+
+    .quest__body {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .atmosphere__list {
+        grid-template-columns: 1fr;
+    }
+
+    .booking__icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .booking__heading {
+        width: 225px;
+    }
+
+    .footer{
+        padding-top: 0;
+    }
+
+    .footer::before{
+        top: 50%;
+        width: 113%;
+        left: -24px;
+    }
+
+    .footer__body {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .footer__copy-right{
+        margin-top: 50px;
+    }
+
+    .footer__content {
+        width: 100%;
+        justify-content: center;
+    }
+    
+
+    .footer__policy,
+    .footer__condition,
+    .footer__copy-right {
+        width: auto;
+        flex-shrink: 0;
     }
 }

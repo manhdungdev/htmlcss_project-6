@@ -53,16 +53,16 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item nav__item-active">
-                        <a href="#!" class="nav__link" title="Projects">Projects</a>
+                        <a href="#projects" class="nav__link" title="Projects">Projects</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link" title="Journey">Journey</a>
+                        <a href="#journey" class="nav__link" title="Journey">Journey</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link" title="Service">Service</a>
+                        <a href="#service" class="nav__link" title="Service">Service</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#!" class="nav__link" title="Contact">Contact</a>
+                        <a href="#contact" class="nav__link" title="Contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -93,17 +93,17 @@
     <label for="menu-checkbox" class="overlay"></label>
     <div class="drawer">
         <ul class="drawer__list">
-            <li class="drawer__item">
-                <a href="#!" class="drawer__link">Projects</a>
+            <li class="nav__item nav__item-active">
+                <a href="#projects" class="nav__link" title="Projects">Projects</a>
             </li>
-            <li class="drawer__item">
-                <a href="#!" class="drawer__link">Journey</a>
+            <li class="nav__item">
+                <a href="#journey" class="nav__link" title="Journey">Journey</a>
             </li>
-            <li class="drawer__item">
-                <a href="#!" class="drawer__link">Service</a>
+            <li class="nav__item">
+                <a href="#service" class="nav__link" title="Service">Service</a>
             </li>
-            <li class="drawer__item">
-                <a href="#!" class="drawer__link">Contact</a>
+            <li class="nav__item">
+                <a href="#contact" class="nav__link" title="Contact">Contact</a>
             </li>
         </ul>
     </div>
@@ -187,7 +187,7 @@
                 </div>
 
                 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
-                    <div class="col">
+                    <div class="col hide-on-mobile">
                         <a href="#!">
                             <article class="clients-card">
                                 <div class="clients-card__img">
@@ -219,7 +219,7 @@
                             </article>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col hide-on-mobile">
                         <a href="#!">
                             <article class="clients-card">
                                 <div class="clients-card__img">
@@ -236,12 +236,18 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="stats-body__btns show-on-motab stats-body__btns-mobile">
+                    <button class="stats-body__btn"></button>
+                    <button class="stats-body__btn stats-body__btn--active"></button>
+                    <button class="stats-body__btn"></button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects -->
-    <section class="project">
+    <section class="project" id="projects">
         <div class="container">
             <div class="project__header">
                 <h2 class="heading project__heading">Take a look at my recent projects</h2>
@@ -249,7 +255,7 @@
                     tincidunt ut elementum turpis.</p>
             </div>
             <div class="project__body">
-                <div class="row row-cols-lg-2 row-cols-sm-1">
+                <div class="row row-cols-lg-2 row-cols-1">
                     <div class="col">
                         <article class="project-item">
                             <div class="project-item__content">
@@ -332,7 +338,7 @@
     </section>
 
     <!-- Stats -->
-    <section class="stats">
+    <section class="stats" id="journey">
         <div class="container">
             <div class="stats-header">
                 <div class="stats-header__title">
@@ -441,7 +447,7 @@
     </section>
 
     <!-- Questions -->
-    <section class="quest">
+    <section class="quest" id="service">
         <div class="container">
             <div class="quest__body">
                 <h2 class="quest__heading heading">A few questions
@@ -563,23 +569,31 @@
                             <img src="assets/img/atmosphere-1.png" alt="Atmosphere thumb 1" class="atmosphere__img">
                         </a>
                     </div>
-                    <div class="atmostphere__item">
+                    <div class="atmostphere__item hide-on-mobile">
                         <a href="#!">
                             <img src="assets/img/atmosphere-2.png" alt="Atmosphere thumb 2" class="atmosphere__img">
                         </a>
                     </div>
-                    <div class="atmostphere__item">
+                    <div class="atmostphere__item hide-on-mobile">
                         <a href="#!">
                             <img src="assets/img/atmosphere-3.png" alt="Atmosphere thumb 3" class="atmosphere__img">
                         </a>
                     </div>
+                </div>
+
+                <div class="stats-body__btns show-on-motab stats-body__btns-motab">
+                    <button class="stats-body__btn"></button>
+                    <button class="stats-body__btn"></button>
+                    <button class="stats-body__btn stats-body__btn--active"></button>
+                    <button class="stats-body__btn"></button>
+                    <button class="stats-body__btn"></button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Booking -->
-    <section class="booking">
+    <section class="booking" id="contact">
         <div class="wrapper">
             <div class="booking__body">
                 <img src="assets/icon/booking.svg" alt="Booking icon" class="booking__icon">
